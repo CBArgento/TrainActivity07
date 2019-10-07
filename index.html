@@ -9,8 +9,12 @@
     <link rel='stylesheet' type='text/css' media='screen' href='assets/css/style.css'>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-analytics.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
-    <script src='main.js'></script>
+
 </head>
 
 <body>
@@ -38,28 +42,7 @@
                         <th scope="col">Minutes Away</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td>Trenton Express</td>
-                        <td>Trenton</td>
-                        <td>25</td>
-                        <td>05:35 PM</td>
-                        <td>10</td>
-                    </tr>
-                    <tr>
-                        <td>Trenton Express</td>
-                        <td>Trenton</td>
-                        <td>25</td>
-                        <td>05:35 PM</td>
-                        <td>10</td>
-                    </tr>
-                    <tr>
-                        <td>Trenton Express</td>
-                        <td>Trenton</td>
-                        <td>25</td>
-                        <td>05:35 PM</td>
-                        <td>10</td>
-                    </tr>
+                <tbody id="table">
                 </tbody>
             </table>
         </div>
@@ -72,20 +55,20 @@
         <div class="form">
             <form>
                 <div class="form-group">
-                    <label for="formGroupExampleInput">Train Name</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                    <label for="trainName">Train Name</label>
+                    <input type="text" class=" trainName form-control" id="formGroupExampleInput" placeholder="">
                 </div>
                 <div class="form-group">
-                    <label for="formGroupExampleInput2">Destination</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                    <label for="destination">Destination</label>
+                    <input type="text" class=" destination form-control" id="formGroupExampleInput2" placeholder="">
                 </div>
                 <div class="form-group">
-                    <label for="formGroupExampleInput">First Train Time (HH:mm - military time)</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                    <label for="firstTrainTime">First Train Time (HH:mm - military time)</label>
+                    <input type="text" class=" trainTime form-control" id="formGroupExampleInput" placeholder="">
                 </div>
                 <div class="form-group">
-                    <label for="formGroupExampleInput2">Frequency (min)</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                    <label for="frequency">Frequency (min)</label>
+                    <input type="text" class=" frequency form-control" id="formGroupExampleInput2" placeholder="">
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
@@ -93,5 +76,6 @@
     </div>
 
 </body>
+<script src='assets/javascript/script.js'></script>
 
 </html>
