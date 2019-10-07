@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Train Activity 07</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/css/style.css'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <!--This is the title header (Jumbotron) for the train activity-->
+    <div class="container">
+        <div class="jumbotron jumbotron-fluid" style="background-image: url('assets/images/train.jpg')">
+            <div class="container">
+                <h1 class="display-4" style="text-align: center;"><b>Anytime is Train Time</b></h1>
+                <p class="lead" style="text-align: center;">Choo Choo. Chee Chee.</p>
+            </div>
+        </div>
+
+        <!--This is the train table-->
+        <div class="tablehdr">
+            <header>Current Train Schedule</header>
+        </div>
+        <div class="table1">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Train Name</th>
+                        <th scope="col">Destination</th>
+                        <th scope="col">Frequency (min)</th>
+                        <th scope="col">Next Arrival</th>
+                        <th scope="col">Minutes Away</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Trenton Express</td>
+                        <td>Trenton</td>
+                        <td>25</td>
+                        <td>05:35 PM</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Trenton Express</td>
+                        <td>Trenton</td>
+                        <td>25</td>
+                        <td>05:35 PM</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Trenton Express</td>
+                        <td>Trenton</td>
+                        <td>25</td>
+                        <td>05:35 PM</td>
+                        <td>10</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br>
+
+        <!--This is the Add Train form-->
+        <div class="formhdr">
+            <header>Add Train</header>
+        </div>
+        <div class="form">
+            <form>
+                <div class="form-group">
+                    <label for="formGroupExampleInput">Train Name</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput2">Destination</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput">First Train Time (HH:mm - military time)</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput2">Frequency</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

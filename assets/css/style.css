@@ -1,0 +1,26 @@
+.tablehdr {
+    background: #2979ff;
+    color: white;
+    padding: 5px;
+}
+
+.formhdr {
+    background: #2979ff;
+    color: white;
+    padding: 5px;
+
+}
+
+.form {
+    outline-color: #2979ff
+    outline-style: solid;
+    border: 1px solid #2979ff;
+    padding: 10px;
+}
+
+.table1 {
+    outline-color: #2979ff
+    outline-style: solid;
+    border: 1px solid #2979ff;
+    padding: 10px;
+}
