@@ -8,11 +8,11 @@ var Config = {
     appId: "1:542512001381:web:cb105082606251dc81718c",
     measurementId: "G-DLMCSJXRYM"
   };
-  
+
   // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
+  firebase.initializeApp(Config);
   firebase.analytics();
-firebase.initializeApp(config);
+
 
 var database = firebase.database();
 
@@ -69,6 +69,7 @@ $(".btn").on("click", function (event) {
         );
         $("#table").append(newRow);
 
-    }, function(errorObject) {
-        console.log("Errors handled:" + errorObject.code)
+    // }
+    // , function(errorObject) {
+    //     console.log("Errors handled:" + errorObject.code)
     });
